@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=New+Amsterdam&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    background: linear-gradient(45deg,#000, #fff,#000 );
+    flex-direction: row;
+    background-size: 100% 200%;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: "New Amsterdam";
+    box-sizing: border-box;
+}
+
+
+.pesquisa
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 20vh;
+}
+
+input
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 500px;
+    padding: 10px 100px;
+    border-style: none;
+    background-color: #00000080;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.521);
+}
+input::placeholder
+{
+    color: #ffffff80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+input:hover
+{
+    background-color: #ffffff80;
+}
+
+input:hover::placeholder
+{
+    color: #00000080;
+}
+
+.principal
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    box-sizing: border-box;
+}
+
+ul
+{
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+ul > li
+{
+    padding: 5px;
+
+}
+
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .moderustic {
+    font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .Input
+  {
+    padding: 10px;
+  }
+
+  button
+  {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 500px;
+    background-color: #00000080;
+    color: #ffffff80;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.521);
+  }
+
+  button:hover
+  {
+    cursor: pointer;
+    background-color: #ffffff80;
+    color: #00000080;
+  }
+
+
+  @media only screen and (max-width: 950px)
+  {
+    
+    .pesquisa
+    {
+        flex-direction: column;
+    }
+    ul
+    {
+        font-size: 20px;
+    }
+  }
